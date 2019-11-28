@@ -1,7 +1,10 @@
 package DAO;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+
+import dto.Players;
 
 public interface PlayersDAO {
-	public void retrieveAll() throws ClassNotFoundException, SQLException;
+	public ArrayList<Players> retrieveAll() throws ClassNotFoundException, SQLException;
 }

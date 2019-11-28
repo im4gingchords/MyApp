@@ -27,8 +27,7 @@
 		</plugins>
 	</build>
 	<dependencies>
-
-		<dependency>
+<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 			<version>5.5.2</version>
@@ -80,14 +79,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>5.4.7.Final</version>
 		</dependency>
-
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.38</version>
-		</dependency>
-
 
 	</dependencies>
 
