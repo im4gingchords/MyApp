@@ -9,4 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+   <servlet>
+    <description></description>
+    <display-name>AddPlayerServlet</display-name>
+    <servlet-name>AddPlayerServlet</servlet-name>
+    <servlet-class>Controller.AddPlayerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddPlayerServlet</servlet-name>
+    <url-pattern>/AddPlayerServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

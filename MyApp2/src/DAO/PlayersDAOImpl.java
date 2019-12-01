@@ -46,11 +46,8 @@ public class PlayersDAOImpl implements PlayersDAO {
 	}
 
 	public void addPlayers(int id, String name, String team, String status) throws ClassNotFoundException, SQLException {
-		String username = "05XyRxBcfa";
-		String password = "C7MMoHmL97";
-		String dbURL = "jdbc:mysql://remotemysql.com:3306/05XyRxBcfa";
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection(dbURL, username, password);
+
+		Connection con = ConnectionClass.intializeConn();
 		PreparedStatement pt = con.prepareStatement("Insert into Players Values(?,?,?,?)");
 		pt.setInt(1,id);
 		pt.setString(2,name);

@@ -2,9 +2,37 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>My App</title>
 </head>
 <body>
+<form id="players-form" class="container account-form" action="AddPlayerServlet" method="post">
+<div class="form-group col-md-6">
+				<label for="city">Id</label> <input type="text"
+					class="form-control" id="playerId" name="playerId" placeholder="Enter Player Id"
+					 pattern= "[0-9]*" maxlength="2"  title="Only numbers allowed" required>
+</div>
+<div class="form-group col-md-6">
+				<label for="city">Name</label> <input type="text"
+					class="form-control" id="player" name="player" placeholder="Enter Player"
+					 pattern= "[A-Za-z\s]*" maxlength="11"  title="Only alphabets allowed" required>
+</div>
 
+<div class="form-group col-md-6">
+				<label for="city">Team</label> <input type="text"
+					class="form-control" id="playerTeam" name="playerTeam" placeholder="Enter Player Team"
+					 pattern= "[A-Za-z\s]*" maxlength="11"  title="Only alphabets allowed" required>
+</div>
+
+<div class="form-group col-md-6">
+				<label for="city">Status</label> <input type="text"
+					class="form-control" id="playerStatus" name="playerStatus" placeholder="Enter Player Status"
+					 pattern= "[A-Za-z\s]*" maxlength="11"  title="Only alphabets allowed" required>
+</div>
+
+<p align = "center">
+<button type="submit" class="btn btn-info">Add new player</button>
+</p>
+			
+</form>
 </body>
 </html>
