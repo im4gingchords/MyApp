@@ -35,6 +35,8 @@ public class AddPlayerServlet extends HttpServlet {
         PrintWriter out = response.getWriter(); 
         out.println("<html><body><b>Successfully Inserted"
                     + "</b></body></html>"); 
+        out.println("<html><body><b>Successfully Inserted"
+                + "</b></body></html>"); 
 		
 	}
 }
